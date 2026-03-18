@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 
 const VALID_KEYS: string[] = [];
@@ -140,9 +141,7 @@ export default function DoorMint() {
   const [keyInput, setKeyInput] = useState('');
   const [keyError, setKeyError] = useState('');
   const [keySuccess, setKeySuccess] = useState(false);
-  const [groqKey, setGroqKey] = useState(
-    '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'
-  );
+  const [groqKey, setGroqKey] = useState("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" );
   const [showGroqInput, setShowGroqInput] = useState(false);
 
   const canGenerate = licensed || usesLeft > 0;
